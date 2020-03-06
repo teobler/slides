@@ -1,0 +1,18 @@
+<!doctype html><html><head><meta charset=UTF-8><title>用最低的成本搭建一个自由的博客 - By Zhang Qirong</title><link rel=stylesheet href=//cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css><link rel=stylesheet href=//cdn.staticfile.org/prism/1.15.0/themes/prism.min.css><link rel=stylesheet href=//cdn.staticfile.org/KaTeX/0.10.0-rc.1/katex.min.css><link href=./css/chunk-vendors.4e4765ff.css rel=stylesheet></head><body><div><article id=webslides><section slide class="slide bg-black-blue aligncenter" image="https://source.unsplash.com/C1HhAQrbykQ/ .dark"><span class="background dark" style="background-image:url('https://source.unsplash.com/C1HhAQrbykQ/')"></span><div class=wrap wrap=true><h1 class="text-landing text-shadow">用最低的成本搭建一个自由的博客</h1><p class=text-intro>By Zhang Qirong</p></div></section><section slide class="slide bg-black-blue aligncenter" image="https://source.unsplash.com/C1HhAQrbykQ/ .dark"><span class="background dark" style="background-image:url('https://source.unsplash.com/C1HhAQrbykQ/')"></span><div class=wrap wrap=true><h1>why</h1></div></section><section slide class="slide bg-black-blue aligncenter" image="https://source.unsplash.com/C1HhAQrbykQ/ .dark"><span class="background dark" style="background-image:url('https://source.unsplash.com/C1HhAQrbykQ/')"></span><div class=wrap wrap=true><h1>你需要啥</h1><ul><li><strong>一个github账号</strong></li><li><strong>相应博客需要的环境配置(比如hexo需要Node环境)</strong></li><li><strong>找一个你看上眼的主题 - 不喜欢就改吧改吧 - 你自己写一个也不是不可以</strong></li><li>买一个域名</li><li>搞一个图床</li></ul></div></section><section slide class="slide bg-black-blue aligncenter" image="https://source.unsplash.com/C1HhAQrbykQ/ .dark"><span class="background dark" style="background-image:url('https://source.unsplash.com/C1HhAQrbykQ/')"></span><div class=wrap wrap=true><h1>你可以接着折腾啥</h1><ul><li>评论系统 - 虽然也不会有人评论的</li><li>阅读数</li><li>阅读时长</li><li>近期文章</li><li>SEO<ul><li>百度 google</li></ul></li><li>国内访问</li><li>GA</li><li>ads</li><li>推广</li></ul></div></section></article></div><script src=//cdn.staticfile.org/echarts/4.1.0-release/echarts.min.js></script><script>window.pluginsOptions = {}
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    let isPrintMode = false;
+    if(~location.search.indexOf('print-pdf')){
+        isPrintMode = true;
+        WebSlides.registerPlugin('scroll', function(){});
+    }
+    const ws = new WebSlides({
+        loop: false
+    })
+    window.wsInstance = ws;
+    if(isPrintMode){
+        ws.slides.forEach(s=>s.show())
+    }
+}, false)</script><script src=./js/chunk-vendors.js></script><script src=./js/blog.js></script></body></html>
